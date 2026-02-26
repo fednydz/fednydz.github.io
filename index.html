@@ -1,29 +1,63 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>موقع منير الشخصي</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f4f4; text-align: center; padding: 50px; }
-        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
-        h1 { color: #2c3e50; }
-        p { color: #555; font-size: 18px; }
-        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; }
-        .btn:hover { background-color: #2980b9; }
-    </style>
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="card">
-        <!-- الصورة الشخصية (رابط مؤقت) -->
-        <img src="https://via.placeholder.com/150" alt="صورة منير" style="border-radius: 50%; width: 150px; height: 150px;">
-        
-        <h1>أهلاً، أنا منير 👋</h1>
-        <p><strong>تقني سامي في قواعد المعطيات</strong></p>
-        <p>أهلاً بكم في موقعي الشخصي. هنا سأشارك مشاريعي في التكوين المهني ومذكرات التخرج.</p>
-        
-        <a href="https://github.com/fednydz" class="btn">حسابي في GitHub</a>
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">MyWebsite</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to My Website</h2>
+            <p>This is a simple and clean website structure.</p>
+            <button onclick="showMessage()">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <section class="cards">
+            <div class="card">
+                <h3>Article 1</h3>
+                <p>Short description about the article.</p>
+            </div>
+
+            <div class="card">
+                <h3>Article 2</h3>
+                <p>Short description about the article.</p>
+            </div>
+
+            <div class="card">
+                <h3>Article 3</h3>
+                <p>Short description about the article.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
